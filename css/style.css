@@ -1,0 +1,226 @@
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+.container {
+	max-width: 1000px;
+	margin: auto;
+	padding: 0 30px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.line {
+	background-color: rgb(28, 75, 145);
+	height: 15px;
+}
+.content {
+	flex: 1 1 auto;
+	background-color: rgb(255, 255, 255);
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 15px 0 0 0;
+}
+.header__logo {
+}
+.header__logo img{
+	width: 200px;
+}
+.header__search {
+	font-size: 30px;
+	font-weight: 700;
+	}
+.header__search a:visited{
+	color: rgb(28, 75, 145);
+}
+.header__search a:hover{
+	color: rgb(231, 29, 29);
+}
+.menu {
+margin: 15px -3px 0 -3px;
+}
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	color: white;
+	flex-wrap: wrap;
+}
+.menu__list li{
+	background-color:rgb(28, 75, 145);
+	padding: 10px;
+	border-radius: 5px;
+	text-transform: uppercase;
+	margin: 0 3px 5px 3px;
+}
+.menu__list li:hover {
+	background-color: rgb(231, 29, 29);
+}
+.news {
+	display: flex;
+	flex-direction: column;
+}
+.news__table {
+	margin-top: 15px;
+	height: 250px;
+	background-size: cover;
+	border-radius: 10px;
+	background-position-y: center;
+	background-color: rgb(255, 255, 255);
+	background-image: url(http://foodsimport.ru/image/catalog/Pavel/musika-iz-pepsi/2.jpg);
+}
+.table__title {
+	text-transform: uppercase;
+	font-size: 25px;
+	font-weight: 700;
+	color: rgb(255, 255, 255);
+	text-shadow: 0 0 10px black;
+	margin: 10px;
+}
+.table__subtitle {
+	color: rgb(255, 255, 255);
+	text-shadow: 0 0 10px black;
+	margin: 10px;
+}
+.news__row {
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+}
+.row__item {
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+.item__number {
+	background-color: rgb(28, 75, 145);
+	padding: 10px 13px;
+	margin-right: 5px;
+	color: white;
+	border-radius: 5px;
+}
+.item_text {
+	color: rgb(28, 75, 145);
+	font-weight: 700;
+}
+.row__item:hover
+	.item__number{
+		background-color: rgb(231, 29, 29);
+	}
+.row__item:hover
+	.item__text{
+		color: rgb(231, 29, 29);
+	}
+
+.about {
+	display: flex;
+	margin: 15px -15px 0 -15px;
+}
+.about2 {
+	display: flex;
+	margin: 15px -15px 0 -15px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.about__item {
+	margin:0 15px 10px 15px;
+}
+.about__item2 {
+	margin:0 15px 15px 15px;
+}
+.item__title {
+	background-color: rgb(28, 75, 145);
+	display: flex;
+	border-radius: 5px;
+	align-items: center;
+}
+.item__title_sq {
+	background-color: rgb(231, 29, 29);
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.item__title_text {
+	color: white;
+	text-transform: uppercase;
+}
+.item_info {
+	margin-top: 5px;
+	display: flex;
+}
+.item__info_img {
+	height: 80px;
+	width: 80px;
+	background-color: rgb(28, 75, 145);
+	flex: 0 0 auto;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.item__info_img2{
+	height: 50px;
+	width: 50px;
+	background-color: rgb(28, 75, 145);
+	flex: 0 0 auto;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+.item__info_text p {
+	max-height: 80px;
+	overflow: auto;
+}
+.item__info_more a:hover {
+	color: rgb(231, 29, 29);
+}
+
+.footer {
+	height: 100px;
+	background-color: rgb(28, 75, 145);
+	}
